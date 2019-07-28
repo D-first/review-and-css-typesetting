@@ -20,8 +20,7 @@ args: ## デフォルトの変数を表示する
 setup: build up docker/setup_npm docker/setup_bundler docker/setup_plantuml_jar ## docker環境をセットアップする
 
 build: ## dockerイメージをbuildする
-	$(DOCKER_COMPOSE) build \
-		--build-arg VIVLIOSTYLE_VERSION=$(VIVLIOSTYLE_VERSION)
+	$(DOCKER_COMPOSE) build 
 
 up: ## dockerコンテナを立ち上げる
 	$(DOCKER_COMPOSE) up -d

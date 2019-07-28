@@ -10,3 +10,7 @@ services:
     ports:
       - 8989:8989
       - 8000:8000
+    build:
+      context: ./
+      args:
+        VIVLIOSTYLE_VERSION: 2018.12.103
